@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Haider</title>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Happy Birthday Haider</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#160508;color:#f5e6d3;font-family:'Poppins',sans-serif;text-align:center;overflow-x:hidden}
-.hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none}
-.heart{position:absolute;color:#ff2a6d;animation:float 6s linear infinite;opacity:0.5}
-@keyframes float{0%{transform:translateY(100vh)}100%{transform:translateY(-10vh)}}
-section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px 15px}
-h1{font-family:'Great Vibes',cursive;font-size:50px;color:#ffd9a0}
-h2{font-family:'Great Vibes',cursive;font-size:40px}
-.btn{margin-top:20px;padding:12px 28px;border:1px solid #ffd9a0;background:transparent;color:#ffd9a0;letter-spacing:2px}
-.photo{width:280px;height:380px;object-fit:cover;border-radius:12px;border:2px solid #ffd9a0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:700px;width:100%;margin-top:20px}
-.grid img, .grid video{width:100%;height:240px;object-fit:cover;border-radius:10px;border:1px solid #ffd9a0}
-.card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,217,160,0.2);padding:25px;border-radius:12px;max-width:550px;width:100%}
+body{background:#1a0a0f;color:#f5e6d3;font-family:Poppins,sans-serif;text-align:center}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
+h1{font-family:Great Vibes,cursive;font-size:52px;color:#ffd9a0}
+h2{font-family:Great Vibes,cursive;font-size:36px;color:#ffd9a0}
+.btn{margin-top:25px;padding:12px 32px;border:1px solid #ffd9a0;background:transparent;color:#ffd9a0;letter-spacing:2px;border-radius:30px}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,217,160,.25);padding:25px;border-radius:15px;max-width:560px;width:100%;line-height:1.9}
+.gallery{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin:20px 0}
+.gallery img{width:150px;height:190px;object-fit:cover;border-radius:12px;border:2px solid #ffd9a0}
+.big{width:260px;height:320px;object-fit:cover;border-radius:15px;border:2px solid #ffd9a0;box-shadow:0 0 25px rgba(255,217,160,.4)}
 .hidden{display:none}
-</style>
-</head>
-<body>
-<div class="hearts" id="hearts"></div>
+</style></head><body>
 
 <section id="s1">
-<img src="pic1.jpg" class="photo">
-<p style="margin-top:15px;letter-spacing:3px;font-size:11px">A STORY WRITTEN IN THE STARS</p>
-<h1>Happy Birthday</h1>
+<img class="big" src="pic1.jpg" onerror="this.style.display='none'">
+<h1 style="margin-top:20px">Happy Birthday</h1>
 <h2>Mere Pyaare Haider</h2>
-<button class="btn" onclick="go('s2')">OPEN MY GIFT</button>
+<p style="letter-spacing:3px;margin-top:10px">Aap Meri Duniya Hain ✨</p>
+<button class="btn" onclick="go('s2')">MERA TOHFA KHOLEN 🎁</button>
 </section>
 
 <section id="s2" class="hidden">
-<p style="letter-spacing:3px;font-size:11px">BEAUTIFUL MEMORIES</p>
-<h2>Hamari Yaadein</h2>
-<div class="grid">
-<video controls><source src="haider.mp4" type="video/mp4"></video>
-<img src="pic2.jpg">
-<img src="pic3.jpg">
-<img src="pic4.jpg">
-<img src="pic5.jpg">
-<img src="pic6.jpg">
+<div class="card">
+<h2>Mere Har Dil Aziz Haider Ko,</h2>
+<div class="gallery">
+<img src="pic1.jpg"><img src="pic2.jpg"><img src="pic3.jpg">
 </div>
-<button class="btn" onclick="go('s3')">MERA KHAT PARHIYE</button>
+<p style="text-align:left">
+Maine ye is liye banaya hai kyunke lafzon me batana kafi nahi hai. Aap mera sukoon hain, meri muskurahat hain, mera sab se haseen safar hain.<br><br>
+Har barish me, har dua me bas Aap ka hi zikr hota hai. Aap mere liye sab kuch hain.<br><br>
+Aap ke saath zindagi bohot khoobsurat lagti hai.<br><br>
+Happy Birthday meri zindagi.<br><br>
+<b>Hamesha Aapki,<br>Mominah ❤️</b>
+</p>
+<button class="btn" onclick="go('s3')">AKHRI BAAT ❤️</button>
+</div>
 </section>
 
 <section id="s3" class="hidden">
-<div class="card" style="text-align:left;line-height:1.9" id="letter"></div>
-<button class="btn hidden" id="b3" onclick="go('s4')">AKHRI BAAT ❤️</button>
-</section>
-
-<section id="s4" class="hidden">
 <div class="card">
 <h2>Certificate of My Heart</h2>
-<h1>Meri Duniya Ke Malik</h1>
+<h1 style="font-size:38px;margin:15px 0">Meri Duniya Ke Malik</h1>
+<img class="big" style="width:200px;height:250px" src="pic2.jpg">
 <p style="margin:20px 0">Haider, Aap ne mera dil churaya hai aur har lamha ko khoobsurat banaya hai. Aap mera aaj hain aur mera kal bhi.</p>
 <h2>I Love You Haider ❤️</h2>
 <p>- Hamesha Aapki, Mominah</p>
@@ -63,27 +52,10 @@ h2{font-family:'Great Vibes',cursive;font-size:40px}
 </section>
 
 <script>
-setInterval(()=>{
-let h=document.createElement('div');h.className='heart';h.innerHTML='❤';
-h.style.left=Math.random()*100+'vw';h.style.fontSize=(10+Math.random()*20)+'px';
-document.getElementById('hearts').appendChild(h);
-setTimeout(()=>h.remove(),6000);
-},300);
-
 function go(id){
 document.querySelectorAll('section').forEach(s=>s.classList.add('hidden'));
 document.getElementById(id).classList.remove('hidden');
-if(id=='s3') typeLetter();
-}
-let text=`Mere Har Dil Aziz Haider Ko,\n\nMaine ye is liye banaya hai kyunke lafzon me batana kafi nahi hai. Aap mera sukoon hain, meri muskurahat hain, mera sab se haseen safar hain.\n\nHar barish me, har dua me bas Aap ka hi zikr hota hai. Aap mere liye sab kuch hain.\n\nAap ke saath zindagi bohot khoobsurat lagti hai.\n\nHappy Birthday meri zindagi.\n\nHamesha Aapki,\nMominah ❤️`;
-function typeLetter(){
-let box=document.getElementById('letter');let i=0;
-let t=setInterval(()=>{
-box.innerHTML=text.substring(0,i).replace(/\n/g,'<br>')+'|';
-i++;
-if(i>text.length){clearInterval(t);document.getElementById('b3').classList.remove('hidden')}
-},35);
+window.scrollTo(0,0);
 }
 </script>
-</body>
-  </html>
+</body></html>
