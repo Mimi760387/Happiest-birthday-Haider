@@ -29,13 +29,13 @@ h2{font-family:'Great Vibes',cursive;font-size:40px}
 <img src="pic1.jpg" class="photo">
 <p style="margin-top:15px;letter-spacing:3px;font-size:11px">A STORY WRITTEN IN THE STARS</p>
 <h1>Happy Birthday</h1>
-<h2>To My Love Haider</h2>
+<h2>Mere Pyaare Haider</h2>
 <button class="btn" onclick="go('s2')">OPEN MY GIFT</button>
 </section>
 
 <section id="s2" class="hidden">
 <p style="letter-spacing:3px;font-size:11px">BEAUTIFUL MEMORIES</p>
-<h2>Our Moments</h2>
+<h2>Hamari Yaadein</h2>
 <div class="grid">
 <video controls><source src="haider.mp4" type="video/mp4"></video>
 <img src="pic2.jpg">
@@ -44,21 +44,21 @@ h2{font-family:'Great Vibes',cursive;font-size:40px}
 <img src="pic5.jpg">
 <img src="pic6.jpg">
 </div>
-<button class="btn" onclick="go('s3')">READ MY LETTER</button>
+<button class="btn" onclick="go('s3')">MERA KHAT PARHIYE</button>
 </section>
 
 <section id="s3" class="hidden">
 <div class="card" style="text-align:left;line-height:1.9" id="letter"></div>
-<button class="btn hidden" id="b3" onclick="go('s4')">ONE LAST THING ❤️</button>
+<button class="btn hidden" id="b3" onclick="go('s4')">AKHRI BAAT ❤️</button>
 </section>
 
 <section id="s4" class="hidden">
 <div class="card">
 <h2>Certificate of My Heart</h2>
-<h1>The Owner of My World</h1>
-<p style="margin:20px 0">Presented to Haider, for stealing my heart and making every second beautiful. You are my today and all my tomorrows.</p>
+<h1>Meri Duniya Ke Malik</h1>
+<p style="margin:20px 0">Haider, Aap ne mera dil churaya hai aur har lamha ko khoobsurat banaya hai. Aap mera aaj hain aur mera kal bhi.</p>
 <h2>I Love You Haider ❤️</h2>
-<p>- Forever Yours, Mimi</p>
+<p>- Hamesha Aapki, Mominah</p>
 </div>
 </section>
 
@@ -75,7 +75,7 @@ document.querySelectorAll('section').forEach(s=>s.classList.add('hidden'));
 document.getElementById(id).classList.remove('hidden');
 if(id=='s3') typeLetter();
 }
-let text=`To My Everything Haider,\n\nI built this because words are not enough. You are my peace, my laughter, my favorite adventure.\n\nHar barish, har dua me bas tum ho. Tum mere liye sab kuch ho.\n\nHappy Birthday my love.\n\nForever Yours,\nMimi ❤️`;
+let text=`Mere Har Dil Aziz Haider Ko,\n\nMaine ye is liye banaya hai kyunke lafzon me batana kafi nahi hai. Aap mera sukoon hain, meri muskurahat hain, mera sab se haseen safar hain.\n\nHar barish me, har dua me bas Aap ka hi zikr hota hai. Aap mere liye sab kuch hain.\n\nAap ke saath zindagi bohot khoobsurat lagti hai.\n\nHappy Birthday meri zindagi.\n\nHamesha Aapki,\nMominah ❤️`;
 function typeLetter(){
 let box=document.getElementById('letter');let i=0;
 let t=setInterval(()=>{
