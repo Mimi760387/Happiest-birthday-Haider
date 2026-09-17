@@ -1,61 +1,11 @@
-<!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Happy Birthday Haider</title>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#1a0a0f;color:#f5e6d3;font-family:Poppins,sans-serif;text-align:center}
-section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
-h1{font-family:Great Vibes,cursive;font-size:52px;color:#ffd9a0}
-h2{font-family:Great Vibes,cursive;font-size:36px;color:#ffd9a0}
-.btn{margin-top:25px;padding:12px 32px;border:1px solid #ffd9a0;background:transparent;color:#ffd9a0;letter-spacing:2px;border-radius:30px}
-.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,217,160,.25);padding:25px;border-radius:15px;max-width:560px;width:100%;line-height:1.9}
-.gallery{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin:20px 0}
-.gallery img{width:150px;height:190px;object-fit:cover;border-radius:12px;border:2px solid #ffd9a0}
-.big{width:260px;height:320px;object-fit:cover;border-radius:15px;border:2px solid #ffd9a0;box-shadow:0 0 25px rgba(255,217,160,.4)}
-.hidden{display:none}
-</style></head><body>
-
-<section id="s1">
-<img class="big" src="pic1.jpg" onerror="this.style.display='none'">
-<h1 style="margin-top:20px">Happy Birthday</h1>
-<h2>Mere Pyaare Haider</h2>
-<p style="letter-spacing:3px;margin-top:10px">Aap Meri Duniya Hain ✨</p>
-<button class="btn" onclick="go('s2')">MERA TOHFA KHOLEN 🎁</button>
-</section>
-
-<section id="s2" class="hidden">
-<div class="card">
-<h2>Mere Har Dil Aziz Haider Ko,</h2>
-<div class="gallery">
-<img src="pic1.jpg"><img src="pic2.jpg"><img src="pic3.jpg">
-</div>
-<p style="text-align:left">
-Maine ye is liye banaya hai kyunke lafzon me batana kafi nahi hai. Aap mera sukoon hain, meri muskurahat hain, mera sab se haseen safar hain.<br><br>
-Har barish me, har dua me bas Aap ka hi zikr hota hai. Aap mere liye sab kuch hain.<br><br>
-Aap ke saath zindagi bohot khoobsurat lagti hai.<br><br>
-Happy Birthday meri zindagi.<br><br>
-<b>Hamesha Aapki,<br>Mominah ❤️</b>
-</p>
-<button class="btn" onclick="go('s3')">AKHRI BAAT ❤️</button>
-</div>
-</section>
-
-<section id="s3" class="hidden">
-<div class="card">
-<h2>Certificate of My Heart</h2>
-<h1 style="font-size:38px;margin:15px 0">Meri Duniya Ke Malik</h1>
-<img class="big" style="width:200px;height:250px" src="pic2.jpg">
-<p style="margin:20px 0">Haider, Aap ne mera dil churaya hai aur har lamha ko khoobsurat banaya hai. Aap mera aaj hain aur mera kal bhi.</p>
-<h2>I Love You Haider ❤️</h2>
-<p>- Hamesha Aapki, Mominah</p>
-</div>
-</section>
-
-<script>
-function go(id){
-document.querySelectorAll('section').forEach(s=>s.classList.add('hidden'));
-document.getElementById(id).classList.remove('hidden');
-window.scrollTo(0,0);
-}
-</script>
-</body></html>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Happiest Birthday Haider</title><style>body{margin:0;font-family:Arial;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;display:flex;justify-content:center;padding:20px}.c{background:#fff;border-radius:28px;padding:24px;max-width:430px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}h1{color:#764ba2;font-size:34px;font-family:cursive;line-height:1.1}.slider{position:relative;height:380px;border-radius:18px;overflow:hidden;border:4px solid #764ba2;margin:18px 0}.sl{position:absolute;inset:0;opacity:0;transition:1s}.sl.a{opacity:1}.sl img{width:100%;height:100%;object-fit:cover}.btn{width:100%;padding:15px;border:none;border-radius:50px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:18px;font-weight:700;margin-top:12px;cursor:pointer}#letter{display:none;text-align:left;background:#fdf6ff;padding:20px;border-radius:15px;line-height:1.7;margin-top:18px;border:2px dashed #d8b4fe}#letter.show{display:block}.dot{width:10px;height:10px;background:#ddd;border-radius:50%;display:inline-block;margin:0 4px}.dot.a{background:#764ba2;width:22px;border-radius:10px}</style></head><body><div class="c"><h1>Happiest Birthday<br>Haider! 🎂</h1><div class="slider" id="sl"><div class="sl a"><img id="img1"></div><div class="sl"><img id="img2"></div><div class="sl"><img id="img3"></div></div><div id="dots"><span class="dot a"></span><span class="dot"></span><span class="dot"></span></div><p style="color:#666">Mominah ki taraf se chota sa surprise ♥</p><button class="btn" onclick="openL()">🎁 Mera Khat Kholein</button><div id="letter"><b style="color:#764ba2">Mere Pyare Haider,</b><br><br>Allah aapko hamesha khush rakhe, sehat de, aur har dua qubool kare. Aap meri zindagi ka sab se khoobsurat hissa hain.<br><br>Aaj ka din sirf aapka hai. Hamesha haste rahen, chamakte rahen!<br><br><b>Happy Birthday Jaan! 🎂❤️</b><br><br>- Aapki Mominah</div></div><script>
+const i1="__B64_1__", i2="__B64_2__", i3="__B64_1__";
+document.getElementById('img1').src="data:image/jpeg;base64,"+i1;
+document.getElementById('img2').src="data:image/jpeg;base64,"+i2;
+document.getElementById('img3').src="data:image/jpeg;base64,"+i3;
+let cur=0,sl=document.querySelectorAll('.sl'),dt=document.querySelectorAll('.dot');
+setInterval(()=>{sl[cur].classList.remove('a');dt[cur].classList.remove('a');cur=(cur+1)%sl.length;sl[cur].classList.add('a');dt[cur].classList.add('a')},3000);
+function openL(){document.getElementById('letter').classList.add('show');confetti()}
+function confetti(){for(let i=0;i<120;i++){let d=document.createElement('div');d.style.position='fixed';d.style.left=Math.random()*100+'vw';d.style.top='-10px';d.style.width='8px';d.style.height='8px';d.style.background=['#667eea','#764ba2','#ff6b6b','#ffd93d'][Math.floor(Math.random()*4)];d.style.borderRadius='50%';d.style.animation='fall '+(2+Math.random()*3)+'s linear forwards';document.body.appendChild(d);setTimeout(()=>d.remove(),4000)}}
+let st=document.createElement('style');st.innerHTML='@keyframes fall{to{transform:translateY(100vh) rotate(720deg)}}';document.head.appendChild(st);
+</script></body></html>
